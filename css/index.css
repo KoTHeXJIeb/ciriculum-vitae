@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+h1, h2, h3, h4, h5, h6, p, span, li {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 250%;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+a:hover {
+    color: #696969;
+}
+h4 {
+    color: #696969;
+}
+ul li {
+    line-height: 250%;
+}
+.bold {
+    font-weight: 700;
+}
+.orange-fg {
+    color: orange;
+}
+.thin-gray {
+    font-weight: 400;
+    color: #696969;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between!important;
+}
+aside {
+    width: 28%;
+    height: 100vw;
+}
+aside .content {
+    color: #fff;
+    padding: 5% 15%;
+}
+aside .content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+#title {
+    font-size: 3em;
+}
+.colorized-list ul li::before {
+    content: "\2022"; 
+    color: orange; 
+    display: inline-block; 
+    width: 1em!important;
+    margin-left: -1em;
+}
+.colorized-list ul {
+   margin-left: 5%;
+}
+.colorized-list ul li span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+aside .content ul {
+    list-style-type: none;
+}
+aside .content ul li span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+#profile_pic img {
+    height: 100%;
+    width: 100%;
+}
+main {
+    width: 72%;
+    height: 100vw;
+}
+main .content {
+    margin: 0% 5%;
+    text-align: justify;
+}
+#projects ul {
+    margin: 0 0 0em;
+    padding: 0;
+    counter-reset: item;
+}
+#projects ul li {
+    margin: 0;
+    padding: 0 0 0 2em;
+    text-indent: -2em;
+    list-style-type: none;
+    counter-increment: item;
+}
+#projects ul li::before {
+    display: inline-block;
+    width: 1em;
+    padding-right: 0.5em;
+    font-weight: bold;
+    text-align: right;
+    content: counter(item) ".";
+}
